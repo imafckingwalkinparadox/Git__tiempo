@@ -1,0 +1,31 @@
+@media (max-width: 600px) {
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+    thead tr {
+        display: none;
+    }
+    tr {
+        margin-bottom: 10px;
+    }
+    td {
+        padding: 10px;
+        text-align: right;
+        position: relative;
+        border: none;
+        border-bottom: 1px solid #dddddd;
+    }
+    td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        width: 50%;
+        padding-right: 10px;
+        text-align: left;
+        font-weight: bold;
+        color: #009879;
+    }
+    td:last-child {
+        border-bottom: 0;
+    }
+}
