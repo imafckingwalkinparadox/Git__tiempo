@@ -1,8 +1,6 @@
 let li_header=document.querySelector(".header")
     li_header.innerHTML=`
-    <div class="tlt">
-    <h1>👽</h1>
-    <h1>Comandos de git</h1>
-    <h1>👽</h1>
-    </div>
-    `;
+
+    <h1 class="title">Comandos <span class="git">Git</span></h1>
+    <a href="https://github.com/imafckingwalkinparadox/Git__tiempo" class="btn_github">Github</a>
+  `;
